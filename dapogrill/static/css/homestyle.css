@@ -1,0 +1,31 @@
+
+.start{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: white;
+    font: 200;
+    text-align: justify;
+}
+
+.description p {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,125 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="overlay"></div>
+    <div class="description">
+        <h1>Welcome to Dapo Grills!</h1>
+        <div class="dropdown">
+            <button type="button" class="dropbtn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Select your location
+            </button>
+            <div class="dropdown-menu">
+                <h2 class="dropdown-header">Where we deliver to...</h2>
+                <a class="dropdown-item" href="#">Ajah</a>
+                <a class="dropdown-item" href="#">Badagry </a>
+                <a class="dropdown-item" href="#">Victoria Island</a>
+                <a class="dropdown-item" href="#">Ikeja</a>
+            </div>
+        </div>
+        
+        <body id ="bg" style="background-image: url('{%static "images/header-background2.jpg" %}');background-position:center";background-repeat: no-repeat;
+    height:650px;
+    background-size: auto;
+    background-position: center;">
+    {% comment %} <footer> {% endcomment %}
+<!-- <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+    
+          <i class="fas fa-phone"></i> +234 803 800 2172
+          <i class="fas fa-envelope-open"></i> muyiwadapo@gmail.com
+        <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <p>1640 Riverside Drive, Hill Valley, California
+                        <br/>info@mywebsite.com
+                        <br/>+ 01 234 567 88
+                        <br/>+ 01 234 567 89</p>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+    </footer> -->
+        </footer>
+         </body>
+         <style>
+}
+.description {
+    left: 50%;
+    position: center;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: white;
+    font: 200;
+    text-align: justify;
+    position:center;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.dropdown {
+    width: 100%;
+    height: 200%;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* .dropdown-menu a {
+    width: 100;
+    height: 200;
+} */
+
+.dropdown button {
+    background-color: #040C0E;
+    color: #cfa342;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #222;
+    width: 100%;
+    height: 200%;
+}
+
+.dropdown button:hover {
+    background-color: #cfa342;
+    color: #040C0E;
+    width: 100%;
+    height: 200%;
+}
+
+.dropdown:active {
+    background-color: #cfa342;
+    color: #040C0E;
+    width: 100%;
+    height: 200%;
+}
+{% comment %} .cover {
+     background-image: url('images/header-background2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+} {% endcomment %}
+
+
+ .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+  } 
+
+</style>
+
+
+
+{% endblock content %}
